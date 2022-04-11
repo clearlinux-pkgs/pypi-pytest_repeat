@@ -4,7 +4,7 @@
 #
 Name     : pypi-pytest_repeat
 Version  : 0.9.1
-Release  : 44
+Release  : 45
 URL      : https://files.pythonhosted.org/packages/1e/69/f7411070a07bc8949725b57d9298ac445e59edb26e3b74b4f97d52afe47a/pytest-repeat-0.9.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/1e/69/f7411070a07bc8949725b57d9298ac445e59edb26e3b74b4f97d52afe47a/pytest-repeat-0.9.1.tar.gz
 Summary  : pytest plugin for repeating tests
@@ -14,17 +14,14 @@ Requires: pypi-pytest_repeat-license = %{version}-%{release}
 Requires: pypi-pytest_repeat-python = %{version}-%{release}
 Requires: pypi-pytest_repeat-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: pytest-repeat
-Provides: pytest-repeat-python
-Provides: pytest-repeat-python3
-BuildRequires : pypi(pluggy)
-BuildRequires : py-python
+BuildRequires : pypi(py)
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(setuptools_scm)
 BuildRequires : pypi(wheel)
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 ===================
@@ -66,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641481701
+export SOURCE_DATE_EPOCH=1649699406
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
