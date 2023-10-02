@@ -1,5 +1,5 @@
 PKG_NAME := pypi-pytest_repeat
-URL = https://files.pythonhosted.org/packages/1e/69/f7411070a07bc8949725b57d9298ac445e59edb26e3b74b4f97d52afe47a/pytest-repeat-0.9.1.tar.gz
+URL = https://files.pythonhosted.org/packages/fd/21/44026e0591608bcce50b10c5307bfc1091d55815e346090f0fc96c281775/pytest-repeat-0.9.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
